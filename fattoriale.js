@@ -1,5 +1,17 @@
 /**
 * Scrivere qui il codice della funzione fattoriale(n)
 **/
-//123 prova
-//prova 123 prova bla bla blagit
+function fatto(n) {
+    if (n < 0) {
+        return -1;
+    }
+    else if (n === 0) {
+        return 1;
+    }
+    else {
+        return (n * fatto(n - 1));
+    }
+}
+
+
+console.log(fatto(7))
